@@ -1,0 +1,28 @@
+﻿.Welcome {
+    font-size: 70px;
+    font-weight: bold;
+    color: #8fcfdd;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+h1 {
+    color: #8fcfdd;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    color: #8fcfdd;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 500px;
+}
