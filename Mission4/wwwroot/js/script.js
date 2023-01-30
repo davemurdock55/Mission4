@@ -19,5 +19,13 @@
             INTEX 10 %
 */
 
-// Your code goes here
-let $('#AssignmentsInput')
+// Getting the values from the DOM (using jQuery)
+let iAssignmentsGrade = $('#AssignmentsInput');
+let iGroupProjectsGrade = $('#GroupProjectsInput');
+let iQuizzesGrade = $('#QuizzesInput');
+let iMidtermExamGrade = $('#MidtermExamInput');
+let iFinalExamGrade = $('#FinalExamInput');
+let iINTEXGrade = $('#INTEXInput');
+
+
+
