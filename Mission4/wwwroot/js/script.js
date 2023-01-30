@@ -19,6 +19,7 @@
             INTEX 10 %
 */
 
+
 // Getting the values from the DOM (using jQuery)
 let iAssignmentsGrade = $('#AssignmentsInput');
 let iGroupProjectsGrade = $('#GroupProjectsInput');
