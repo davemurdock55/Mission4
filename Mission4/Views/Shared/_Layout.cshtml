@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    @* Getting the value of ViewData["Title"] to get dynamic titles for each individual page *@
+    <title>@ViewData["Title"]</title>
+    <!-- Favicon -->
+    <link href="~/img/DM_logo_sq.png" rel="icon" type="image/x-icon"> <!-- Bootstrap link -->
+    <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    @* I tried EVERYTHING. jQuery literally wouldn't work until I put it up here as well. *@
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+</head>
+<body>
+    @* Navbar *@
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            @* Using the asp-controller "Blah" and the asp-action "Index" to bring the user to the index.cshtml page *@
+            @* (These are tag helpers) *@
+            <a class="navbar-brand" asp-controller="Blah" asp-action="Index">Mission 5</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        @* Using the asp-controller "Blah" and the asp-action "Index" to bring the user to the index.cshtml page *@
+                        <a class="nav-link active" asp-controller="Blah" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        @* Using the asp-controller "Blah" and the asp-action "IndGrade_Calculatorex" to bring the user to the Grade_Calculator.cshtml page *@
+                        <a class="nav-link active" asp-controller="Blah" asp-action="Grade_Calculator">Grade Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://bootswatch.com/flatly/">Bootstrap</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    @* Body *@
+    <div>
+        @RenderBody()
+    </div>
+
+    @* Footer *@
+<footer>
+    <!-- Script Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="~/js/script.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+</footer>
+
+</body>
+</html>

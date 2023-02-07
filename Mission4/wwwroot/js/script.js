@@ -19,10 +19,9 @@
 */
 
 
-
-
 $('#CalcGrade').click(function ()
 {
+
      // Getting the values from the DOM (using jQuery)
      let iAssignmentsGrade = $('#AssignmentsInput').val();
      let iGroupProjectsGrade = $('#GroupProjectsInput').val();
